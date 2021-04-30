@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramo de Boda</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- INICIO NAV -->
+    <nav>
+        <div class="nav-wrapper pink lighten-3">
+            <a href="inicio.html" class="brand-logo">FLORARTE</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="despacho.html">Despacho</a></li>
+                <li><a href="quienes-somos.html">Quienes Somos</a></li>
+                <li><a href="suscripcion.html">Suscripción</a></li>
+                <li><a class="waves-effect waves-light btn modal-trigger" href="#modal1">Login</a></li>
+            </ul>
+        </div>
+
+        </div>
+    </nav>
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="inicio.html">Inicio</a></li>
+        <li><a href="despacho.html">Despacho</a></li>
+        <li><a href="quienes-somos.html">Quienes Somos</a></li>
+        <li><a href="suscripcion.html">Suscripcion</a></li>
+        <li><a class="waves-effect waves-light btn modal-trigger" href="#modal1">Login</a></li>
+    </ul>
+
+    <!-- MODAL LOGIN INICIO -->
+    <div id="modal1" class="modal">
+        <div class="modal-content black-text">
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="col s12 m12 l12 center-align">
+                            <h5><b>Inicio Sesión</b></h5>
+                        </div>
+                    </div>
+                    <div class="row" id="info-login">
+                        <div class="input-field col s6 ">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input id="icon_prefix" type="text" class="validate">
+                            <label for="icon_prefix">Usuario</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">vpn_key</i>
+                            <input id="icon_telephone" type="password" class="validate">
+                            <label for="icon_telephone">Contraseña</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="inicio.html" class="waves-effect waves-light btn-small teal lighten-2">Ingresar</a>
+        </div>
+    </div>
+
+    <!-- MODAL LOGIN FINAL -->
+
+    <!-- INICIALIZACIÓN NAVBAR -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        });</script>
+    <!-- FIN NAVBAR -->
+
+    <!-- INICIO PRODUCTO -->
+
+    <div class="container" id="container-producto">
+        <div class="row">
+            <div class="col s12 m6 l6">
+                <div class="imagen-producto">
+                    <img class="responsive-img" src="img/Ramo.jpg">
+                </div>
+            </div>
+            <div class="col s12 m6 l6">
+                <div class="card-panel  pink lighten-5" id="tarjeta-producto">
+                    <span class="black-text">
+                        <h5><b>PORTA MACETEROS</b></h5>
+                        <h5><b>$25.990</b></h5>
+                        <h5><b> Suscriptores: $23.990</b></h5><br>
+                        <h6><b>Despacho a Domicilio</b></h6>
+                        <h6 id="titulo-icono"><b>Stock Disponible</b></h6><br>
+                        <div id="boton-compra">
+                            <a class="waves-effect waves-light btn-small">Comprar</a>
+                        </div>
+                        <div id="boton-compra">
+                            <a class="waves-effect waves-light btn-small">Añadir al carrito</a>
+                        </div>
+                        <div id="boton-compra">
+                            <a class="waves-effect waves-light btn-small">Comprar con Suscripción</a>
+                        </div>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FIN PRODUCTO -->
+
+    <!-- INICIO DESCRIPCION -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12 l6">
+                <div class="card pink lighten-5">
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4 center-align">Descripción<i
+                                class="material-icons right">more_vert</i></span>
+                    </div>
+                    <div class="card-image waves-effect waves-block waves-light"><br><br><br>
+                    </div>
+
+                    <div class="card-reveal pink lighten-5">
+                        <span class="card-title grey-text text-darken-4">Ramo de Flores<i
+                                class="material-icons right">close</i></span>
+                        <p>Ramo de flores hecho con los mas bellos productos, escogidos delicadamente para hacer tu
+                            celebración inolvidable</p>
+                        <p>Flores a elección</p>
+                        <p>Hecho por: Florarte</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FIN DESCRIPCION -->
+
+    <!-- INICIO FOOTER -->
+    <footer class="page-footer pink lighten-3" id="footer-inicio">
+        <div class="container">
+            <div class="row">
+                <div class="col l4 m4 s6" id="contenido-footer">
+                    <h5 class="white-text">Vinculos Rapidos</h5>
+                    <div class="contenedor-links">
+                        <ul>
+                            <li><a class="grey-text text-lighten-3" href="#!">Fundación</a></li>
+                            <li><a class="grey-text text-lighten-3" href="#!">FAQ</a></li>
+                            <li><a class="grey-text text-lighten-3" href="#!">Reclamos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col l4 m4 s6">
+                    <h5 class="white-text"> Nosotros</h5>
+                    <div class="contenedor-links">
+                        <ul>
+                            <li><a class="grey-text text-lighten-3" href="quienes-somos.html">Mision y Vision</a>
+                            </li>
+                            <li><a class="grey-text text-lighten-3" href="#!">Trabaja con nosotros</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col s12 m12 l12">
+                    <p class="copyright">© 2021 Florarte. All rights reserved.</p>
+                </div>
+            </div>
+    </footer>
+    <!-- FIN FOOTER -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- INICIALIZACION MODAL -->
+    <script>document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.modal');
+            var instances = M.Modal.init(elems);
+        });</script>
+</body>
+
+</html>

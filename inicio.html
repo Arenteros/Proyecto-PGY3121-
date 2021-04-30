@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<!-- INICIO NAVBAR -->
+
+<body>
+
+    <section class="banner"></section>
+    <div class="banner-img">
+    </div>
+    </section>
+
+    <nav>
+        <div class="nav-wrapper pink lighten-3">
+            <a href="inicio.html" class="brand-logo">FLORARTE</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="despacho.html">Despacho</a></li>
+                <li><a href="quienes-somos.html">Quienes Somos</a></li>
+                <li><a href="suscripcion.html">Suscripción</a></li>
+                <li><a class="waves-effect waves-light btn modal-trigger" href="#modal1">Login</a></li>
+            </ul>
+        </div>
+
+        </div>
+    </nav>
+    <ul class="sidenav pink lighten-5" id="mobile-demo">
+        <li><a href="inicio.html">Inicio</a></li>
+        <li><a href="despacho.html">Despacho</a></li>
+        <li><a href="quienes-somos.html">Quienes Somos</a></li>
+        <li><a href="suscripcion.html">Suscripción</a></li>
+        <li><a class="waves-effect waves-light btn modal-trigger" href="#modal1">Login</a></li>
+    </ul>
+
+    <!-- MODAL LOGIN INICIO -->
+    <div id="modal1" class="modal">
+        <div class="modal-content black-text">
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="col s12 m12 l12 center-align">
+                            <h5><b>Inicio Sesión</b></h5>
+                        </div>
+                    </div>
+                    <div class="row" id="info-login">
+                        <div class="input-field col s6 ">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input id="icon_prefix" type="text" class="validate">
+                            <label for="icon_prefix">Usuario</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">vpn_key</i>
+                            <input id="icon_telephone" type="password" class="validate">
+                            <label for="icon_telephone">Contraseña</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="inicio.html" class="waves-effect waves-light btn-small teal lighten-2">Ingresar</a>
+        </div>
+    </div>
+
+    <!-- MODAL LOGIN FINAL -->
+
+    <!-- INICIALIZACIÓN NAVBAR -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        });</script>
+    <!-- FIN NAVBAR -->
+
+    <!-- INICIO OFERTAS -->
+
+    <div class="container-ofertas-titulo">
+        <div class="container">
+            <div class="row">
+                <div class="col m3 l4"></div>
+                <div class="col s12 m6 l4">
+                    <div class="card-panel pink lighten-4 center-align">
+                        <h5 class="titulo-ofertas white-text">OFERTAS</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="carousel">
+        <a class="carousel-item" href="producto1.html"><img src="img/bonsai.jpg" height="150"></a>
+        <a class="carousel-item" href="producto2.html"><img src="img/tierra-de-hojas.jpg" height="180"></a>
+        <a class="carousel-item" href="producto3.html"><img src="img/maceteros.jpg"></a>
+    </div>
+
+
+
+    <script>document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.carousel');
+            var instances = M.Carousel.init(elems);
+        });</script>
+
+    <!-- FIN OFERTAS -->
+
+
+    <!-- INICIO DATOS EXTRA -->
+    <div class="datos-extra">
+        <div class="container pink lighten-4 center-align white-text">
+            <div class="row">
+                <div class="col s12 m12 l12">
+                    <div class="col s12 m12 l4">
+                        <h6>COMPRA</h6>
+                        <i class="medium material-icons"><a href="#titulo-productos">local_grocery_store</a></i>
+                        <p>¿Con ganas de decorar tu hogar? Revisa nuestros hermosos productos sin moverte de tu casa</p>
+                    </div>
+
+                    <div class="col s12 m12 l4">
+                        <h6>CONTACTANOS</h6>
+                        <i class="medium material-icons"><a href="http://wa.link/b3btec">call</a></i>
+                        <p>¿Tienes dudas? Contactanos desde tu teléfono móvil. ¡Te responderemos lo mas rápido posible!
+                        </p>
+                    </div>
+
+                    <div class="col s12 m12 l4">
+                        <h6>MAPA</h6>
+                        <i class="medium material-icons"><a
+                                href="https://goo.gl/maps/3jURdZaWVW4L7iQT8">location_on</a></i>
+                        <p>¿Quieres venir a ver nuestro productos presencialmente? Mira nuestra ubicación. ¡Te
+                            esperamos!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FIN DATOS EXTRA -->
+
+    <!-- INICIO PRODUCTOS -->
+    <div class="titulo-productos center-align" id="titulo-productos">
+        <h2>PRODUCTOS</h2>
+    </div>
+
+    <!-- FILA 1 -->
+    <div>
+        <div class="row">
+            <div class="col s12 m12 l6">
+                <div class="card horizontal">
+                    <div class="card-image">
+                        <a href="producto1.html"><img src="img/bonsai.jpg" alt="" height="280"></a>
+                    </div>
+                    <div class="card-stacked">
+                        <div class="card-content col s12">
+                            <div class="texto-producto">
+                                <a href="producto1.html">
+                                    <p class="black-text"><b>BONSAI JAPONES 15 AÑOS</b></p>
+                                </a>
+                                <p><b>$49.990</b></p>
+                            </div>
+                        </div>
+                        <div class="card-action col s12">
+                            <div class="acciones-productos">
+                                <div class="col s12 right-align">
+                                    <a href="producto1.html">Mas información</a>
+                                    <div class="añadir">
+                                        <a href="producto1.html">comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m12 l6">
+                <div class="card horizontal">
+                    <div class="card-image">
+                        <a href="producto2.html"><img src="img/tierra-de-hojas.jpg" height="280"></a>
+                    </div>
+                    <div class="card-stacked">
+                        <div class="card-content col s12">
+                            <div class="texto-producto">
+                                <a href="producto2.html">
+                                    <p class="black-text"><b>TIERRA DE HOJAS</b></p>
+                                </a>
+                                <p><b>$15.990</b></p>
+                            </div>
+                        </div>
+                        <div class="card-action col s12">
+                            <div class="acciones-productos">
+                                <div class="col s12 right-align">
+                                    <a href="producto2.html">Mas información</a>
+                                    <div class="añadir">
+                                        <a href="producto2.html">comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FILAS 2 -->
+        <div>
+            <div class="row">
+                <div class="col s12 m12 l6">
+                    <div class="card horizontal">
+                        <div class="card-image">
+                            <a href="producto3.html"><img src="img/maceteros.jpg" height="280"></a>
+                        </div>
+                        <div class="card-stacked">
+                            <div class="card-content col s12">
+                                <div class="texto-producto">
+                                    <a href="producto3.html">
+                                        <p class="black-text"><b>PORTA MACETEROS</b></p>
+                                    </a>
+                                    <p><b>$30.990</b></p>
+                                </div>
+                            </div>
+                            <div class="card-action col s12">
+                                <div class="acciones-productos">
+                                    <div class="col s12 right-align">
+                                        <a href="producto3.html">Mas información</a>
+                                        <div class="añadir">
+                                            <a href="producto3.html">comprar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m12 l6">
+                    <div class="card horizontal">
+                        <div class="card-image">
+                            <a href="producto4.html"><img src="img/Ramo.jpg" height="280"></a>
+                        </div>
+                        <div class="card-stacked">
+                            <div class="card-content col s12">
+                                <div class="texto-producto">
+                                    <a href="producto4.html">
+                                        <p class="black-text"><b>RAMO DE BODA</b></p>
+                                    </a>
+                                    <p><b>$25.990</b></p>
+                                </div>
+                            </div>
+                            <div class="card-action col s12">
+                                <div class="acciones-productos">
+                                    <div class="col s12 right-align">
+                                        <a href="producto4.html">Mas información</a>
+                                        <div class="añadir">
+                                            <a href="producto4.html">comprar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FILA 3 -->
+            <div class="row">
+                <div class="col s12 m6 l4">
+                    <div class="card horizontal">
+                        <div class="card-image">
+                            <a href=""><img class="responsive-img" src="img/logo.png"></a>
+                        </div>
+                        <div class="card-stacked">
+                            <div class="card-content col s12">
+                                <div class="texto-producto-proximamente center-align">
+                                    <p><b>¡Proximamente!</b></p>
+                                    <div class="progress">
+                                        <div class="indeterminate"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-action col s12">
+                                <div class="acciones-productos-filas-3">
+                                    <div class="col s12 right-align">
+                                        <a href="inicio.html">Mas información</a>
+                                        <div class="añadir">
+                                            <a href="inicio.html">comprar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m6 l4">
+                    <div class="card horizontal">
+                        <div class="card-image">
+                            <a href=""><img class="responsive-img" src="img/logo.png"></a>
+                        </div>
+                        <div class="card-stacked">
+                            <div class="card-content col s12">
+                                <div class="texto-producto-proximamente center-align">
+                                    <p><b>¡Proximamente!</b></p>
+                                    <div class="progress">
+                                        <div class="indeterminate"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-action col s12">
+                                <div class="acciones-productos-filas-3">
+                                    <div class="col s12 right-align">
+                                        <a href="inicio.html">Mas información</a>
+                                        <div class="añadir">
+                                            <a href="inicio.html">comprar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m6 l4">
+                    <div class="card horizontal">
+                        <div class="card-image">
+                            <a href=""><img class="responsive-img" src="img/logo.png"></a>
+                        </div>
+                        <div class="card-stacked">
+                            <div class="card-content col s12">
+                                <div class="texto-producto-proximamente center-align">
+                                    <p><b>¡Proximamente!</b></p>
+                                    <div class="progress">
+                                        <div class="indeterminate"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-action col s12">
+                                <div class="acciones-productos-filas-3">
+                                    <div class="col s12 right-align">
+                                        <a href="inicio.html">Mas información</a>
+                                        <div class="añadir">
+                                            <a href="inicio.html">comprar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FILA 4 -->
+            <div class="row">
+                <div class="col s12 m6 l4">
+                    <div class="card horizontal">
+                        <div class="card-image">
+                            <img class="responsive-img" src="img/logo.png">
+                        </div>
+                        <div class="card-stacked">
+                            <div class="card-content col s12">
+                                <div class="texto-producto-proximamente center-align">
+                                    <p><b>¡Proximamente!</b></p>
+                                    <div class="progress">
+                                        <div class="indeterminate"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-action col s12">
+                                <div class="acciones-productos-filas-3">
+                                    <div class="col s12 right-align">
+                                        <a href="inicio.html">Mas información</a>
+                                        <div class="añadir">
+                                            <a href="inicio.html">comprar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m6 l4">
+                    <div class="card horizontal">
+                        <div class="card-image">
+                            <img class="responsive-img" src="img/logo.png">
+                        </div>
+                        <div class="card-stacked">
+                            <div class="card-content col s12">
+                                <div class="texto-producto-proximamente center-align">
+                                    <p><b>¡Proximamente!</b></p>
+                                    <div class="progress">
+                                        <div class="indeterminate"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-action col s12">
+                                <div class="acciones-productos-filas-3">
+                                    <div class="col s12 right-align">
+                                        <a href="inicio.html">Mas información</a>
+                                        <div class="añadir">
+                                            <a href="inicio.html">comprar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m6 l4">
+                    <div class="card horizontal">
+                        <div class="card-image">
+                            <img class="responsive-img" src="img/logo.png">
+                        </div>
+                        <div class="card-stacked">
+                            <div class="card-content col s12">
+                                <div class="texto-producto-proximamente center-align">
+                                    <p><b>¡Proximamente!</b></p>
+                                    <div class="progress">
+                                        <div class="indeterminate"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-action col s12">
+                                <div class="acciones-productos-filas-3">
+                                    <div class="col s12 right-align">
+                                        <a href="inicio.html">Mas información</a>
+                                        <div class="añadir">
+                                            <a href="inicio.html">comprar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FIN PRODUCTOS -->
+
+            <!-- INICIO FOOTER -->
+            <footer class="page-footer pink lighten-3" id="footer-inicio">
+                <div class="container">
+                    <div class="row">
+                        <div class="col l4 m4 s6" id="contenido-footer">
+                            <h5 class="white-text">Vinculos Rapidos</h5>
+                            <div class="contenedor-links">
+                                <ul>
+                                    <li><a class="grey-text text-lighten-3" href="#!">Fundación</a></li>
+                                    <li><a class="grey-text text-lighten-3" href="#!">FAQ</a></li>
+                                    <li><a class="grey-text text-lighten-3" href="#!">Reclamos</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col l4 m4 s6">
+                            <h5 class="white-text"> Nosotros</h5>
+                            <div class="contenedor-links">
+                                <ul>
+                                    <li><a class="grey-text text-lighten-3" href="quienes-somos.html">Mision y
+                                            Vision</a></li>
+                                    <li><a class="grey-text text-lighten-3" href="#!">Trabaja con nosotros</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col s12 m12 l12">
+                            <p class="copyright">© 2021 Florarte. All rights reserved.</p>
+                        </div>
+                    </div>
+            </footer>
+            <!-- FIN FOOTER -->
+            <!-- Compiled and minified JavaScript -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+            <!-- INICIALIZACION MODAL -->
+            <script>document.addEventListener('DOMContentLoaded', function () {
+                    var elems = document.querySelectorAll('.modal');
+                    var instances = M.Modal.init(elems);
+                });</script>
+</body>
+
+</html>

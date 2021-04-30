@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quienes Somos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="body-quienes">
+
+
+    <!-- INICIO NAV -->
+    <nav>
+        <div class="nav-wrapper pink lighten-3">
+            <a href="inicio.html" class="brand-logo">FLORARTE</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="despacho.html">Despacho</a></li>
+                <li><a href="quienes-somos.html">Quienes Somos</a></li>
+                <li><a href="suscripcion.html">Suscripción</a></li>
+                <li><a class="waves-effect waves-light btn modal-trigger" href="#modal1">Login</a></li>
+            </ul>
+        </div>
+
+        </div>
+    </nav>
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="inicio.html">Inicio</a></li>
+        <li><a href="despacho.html">Despacho</a></li>
+        <li><a href="quienes-somos.html">Quienes Somos</a></li>
+        <li><a href="suscripcion.html">Suscripcion</a></li>
+        <li><a class="waves-effect waves-light btn modal-trigger" href="#modal1">Login</a></li>
+    </ul>
+
+    <!-- MODAL LOGIN INICIO -->
+    <div id="modal1" class="modal">
+        <div class="modal-content black-text">
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="col s12 m12 l12 center-align">
+                            <h5><b>Inicio Sesión</b></h5>
+                        </div>
+                    </div>
+                    <div class="row" id="info-login">
+                        <div class="input-field col s6 ">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input id="icon_prefix" type="text" class="validate">
+                            <label for="icon_prefix">Usuario</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">vpn_key</i>
+                            <input id="icon_telephone" type="password" class="validate">
+                            <label for="icon_telephone">Contraseña</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="inicio.html" class="waves-effect waves-light btn-small teal lighten-2">Ingresar</a>
+        </div>
+    </div>
+
+    <!-- MODAL LOGIN FINAL -->
+
+    <!-- INICIALIZACIÓN NAVBAR -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        });</script>
+    <!-- FIN NAVBAR -->
+
+    <!-- INICIO QUIENES SOMOS -->
+
+    <div class="container" id="Quienes-Somos">
+        <div class="row">
+            <div class="col s12 m8 l8 center-align">
+                <h4 id="titulo-quienes">Nuestra declaración de misión Florarte</h4><br>
+
+                <h5 id="titulo-quienes">Nuestra misión: Inspirar y nutrir el espiritu humano, una persona, un ramo de
+                    flores y una comunidad a la vez.</h5><br>
+
+                <h6>A continuación figuran los principios que rigen cómo la hacemos realidad cada día:</h6><br>
+
+                <div class="titulos-cuerpo">
+                    <h6>Nuestros productos</h6>
+                </div>
+
+                <h6 id="cuerpo-quienes">Siempre han sido y siempre serán de la mejor calidad. Nos apasiona la labor de
+                    abastecernos de los mejores productos siguiendo estrictos principios éticos, llevandolos con el
+                    máximo cuidado y mejorar la vida de las personas que los cultivan. Todo ello nos parece de suma
+                    importancia, nunca damos nuestra labor por concluida.</h6><br>
+
+                <div class="titulos-cuerpo">
+                    <h6>Nuestros partners</h6>
+                </div>
+
+                <h6 id="cuerpo-quienes">Nos llamamos partners, porque no se trata de un puesto de trabajo, sino de
+                    nuestra pasión. Juntos hacemos nuestra la diversidad para crear un lugar donde cada uno de nosotros
+                    pueda ser quien es. Siempre nos tratamos con respeto y dignidad entre nosotros. Y exigimos a
+                    nuestros compañeros que estén a la altura.</h6><br>
+
+                <div class="titulos-cuerpo">
+                    <h6>Nuestros clientes</h6>
+                </div>
+
+                <h6 id="cuerpo-quienes">Cuando nuestro compromiso es pleno, establecemos una relación con nuestros
+                    clientes, nos reímos con ellos y les alegramos la vida, aunque sean solo unos instantes. No cabe
+                    duda de que todo parte de la promesa de un ramo de flores elaborado a la perfección, pero nuestro
+                    trabajo
+                    va mucho más allá. De lo que se trata, en realidad, es de conexión humana.</h6><br>
+
+                <div class="titulos-cuerpo">
+                    <h6>Nuestra comunidad</h6>
+                </div>
+
+                <h6 id="cuerpo-quienes">Cada tienda forma parte de una comunidad, y nos tomamos muy en serio la
+                    responsabilidad de ser buenos vecinos. Nos gusta colaborar y participar en acciones locales en los
+                    lugares donde operamos. Podemos constituir una fuerza de actuación positiva, consiguiendo reunir a
+                    nuestros partners, nuestros clientes y nuestra comunidad, para que contribuyan a ello día a día. Y
+                    así conseguir que nuestra responsabilidad (y nuestro potencial positivo) sea aún mayor.
+                </h6><br>
+
+                <div class="titulos-cuerpo">
+                    <h6>Declaración de misión sobre el medio ambiente</h6>
+                </div>
+
+                <h6 id="cuerpo-quienes">En Starbucks tenemos el compromiso de desempeñar una función de liderazgo
+                    medioambiental en todas las facetas de nuestro negocio.
+                </h6><br>
+
+                <div class="titulos-cuerpo">
+                    <h6>Cumplimos esta misión con el compromiso de:</h6>
+                </div>
+
+                <ul>
+                    <li>Entender los problemas medioambientales y compartir información con nuestros partners.</li>
+                    <li>Desarrollar soluciones innovadoras y flexibles para propiciar el cambio.</li>
+                    <li>Esforzarnos por comprar, vender y utilizar productos respetuosos con el medio ambiente.</li>
+                    <li>Reconocer que la responsabilidad financiera es esencial para nuestro futuro medioambiental.</li>
+                    <li>Infundir la responsabilidad medioambiental como valor corporativo.</li>
+                    <li>Medir y supervisar nuestros progresos en cada proyecto.</li>
+                    <li>Alentar a todos los partners para que hagan suya nuestra misión.</li>
+                </ul>
+            </div>
+            <div class="col s12 m4 l4">
+                <div id="img-1-quienes-somos" class="fotos-quienes">
+                    <img class="responsive-img" src="img/img quienes-somos 1.jpg ">
+                </div>
+                <div id="img-2-quienes-somos" class="fotos-quienes">
+                    <img class="responsive-img" src="img/img quienes-somos 2.jpg">
+                </div>
+                <div id="img-3-quienes-somos" class="fotos-quienes">
+                    <img class="responsive-img" src="img/img quienes-somos 3.jpg">
+                </div>
+            </div>
+        </div>
+
+        <!-- FIN QUIENES SOMOS -->
+
+
+        <!-- INICIO FOOTER -->
+        <footer class="page-footer pink lighten-3" id="footer-inicio">
+            <div class="container">
+                <div class="row">
+                    <div class="col l4 m4 s6" id="contenido-footer">
+                        <h5 class="white-text">Vinculos Rapidos</h5>
+                        <div class="contenedor-links">
+                            <ul>
+                                <li><a class="grey-text text-lighten-3" href="#!">Fundación</a></li>
+                                <li><a class="grey-text text-lighten-3" href="#!">FAQ</a></li>
+                                <li><a class="grey-text text-lighten-3" href="#!">Reclamos</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col l4 m4 s6">
+                        <h5 class="white-text"> Nosotros</h5>
+                        <div class="contenedor-links">
+                            <ul>
+                                <li><a class="grey-text text-lighten-3" href="quienes-somos.html">Mision y Vision</a>
+                                </li>
+                                <li><a class="grey-text text-lighten-3" href="#!">Trabaja con nosotros</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col s12 m12 l12">
+                        <p class="copyright">© 2021 Florarte. All rights reserved.</p>
+                    </div>
+                </div>
+        </footer>
+        <!-- FIN FOOTER -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+        <!-- INICIALIZACION MODAL -->
+        <script>document.addEventListener('DOMContentLoaded', function () {
+                var elems = document.querySelectorAll('.modal');
+                var instances = M.Modal.init(elems);
+            });</script>
+
+</body>
+
+</html>
